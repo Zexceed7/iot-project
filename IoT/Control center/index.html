@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Control Center</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" 
+    rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="infoContainer">
+        <img id="avatar" src="https://i.imgur.com/Op7jzsB.gif">
+        <h1 id= "title">Centro de control</h1>
+        <p id="description">Este es un centro de control con el cual podras interactuar con 
+            objetos
+        </p>
+    </div>
+    <div id="controlCenterContainer">
+        <div id="cardContainer">
+        <div id="card">
+            <h1 class="cardTitle">Boton</h1>
+            <button id="botonEncender">ON</button>
+            <button id="botonApagar">OFF</button>
+         </div>
+     </div>
+     <div id="cardContainer">
+         <div id="card">
+             <h1 class = "cardTitle">Servomotor</h1>
+             <input type="range" min="0" max="180" value="90" id="anguloServo"/>
+             <p id="valorAnguloServo">90&deg;</p>
+        </div>
+    </div>
+     <div id="cardContainer">
+            <div id="card">
+                <h1 class="cardTitle">No hay agua</h1>
+                <div id="waterIndicator"></div>
+        </div>
+        </div>
+         <div id="cardContainer">
+        <div id="card">
+            <h1 class="cardTitle">Unpushed</h1>
+            <div id="botonImagen"></div>
+        </div>
+        </div>
+
+
+</body>
+</html>

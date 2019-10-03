@@ -1,0 +1,47 @@
+body{
+    /*background-color: red;*/
+    /*background-image: url("Ludicolo.gif");*/
+    background-image: url("https://media1.tenor.com/images/f5a3b66042acad2d396b4c0bc243922c/tenor.gif?itemid=6049974.gif");
+    background-repeat: repeat; 
+    font-family: 'B612 Mono', monospace;
+}
+.contenedor{
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 150px;
+}
+#titulo, 
+#descripcion{
+    text-align: center;
+}
+#generador{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+#imagenes{
+    width: 50%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+#boton{
+    background-color: bisque;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: 10px solid #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#boton:hover{
+    background-color: rgb(113, 169, 214);
+}
+#boton:active{
+    background-color: aquamarine;
+}

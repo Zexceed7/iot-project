@@ -1,0 +1,118 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("https://66.media.tumblr.com/93fb4fac85d7e3c87ca321d948508851/tumblr_o129kxdGz71qd0edbo1_1280.gif");
+    background-repeat: repeat;  
+}
+.infoContainer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas:
+      "avatar1 titulo"
+      "avatar2 descripcion";
+    grid-column-gap: 50px;
+    color: antiquewhite;
+}
+.avatar {
+    width: 300px;
+    border-radius: 150px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.5);
+    grid-row: avatar1 / avatar2;
+    
+  }
+.titulo {
+    font-size: 60px;
+    font-style: italic;
+    color: green;
+}
+.descripcion {
+  font-size: 30px;}
+
+  .controlCenterContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+    grid-row-gap: 30px;
+    
+}
+.card{
+  background-color: white;
+    width: 80%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+  
+}
+.cardTitle {
+  text-align: center;
+  font-weight: 400;
+}
+#cardButton{
+  display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+      "titulo1"
+      "encendido";
+
+  }
+  .material-icons {
+    font-size: 40px;
+  }
+  .botonEncendido {
+    border-radius: 20px;
+    background-color:green;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+  }
+.botonEncendido:hover{background-color: #3e8e41}
+.botonEncendido:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#cardNivel {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 100%;
+}
+.feedIndicator {
+  width: 100%;
+  height: 100%;
+  background-color: #a36e0d;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1300px){
+  .controlCenterContainer{
+      grid-template-columns:  auto;
+    width: 95%;
+  }
+  .infoContainer{
+    grid-template-areas:   
+    "titulo"
+    "avatar1"
+     "descripcion"
+     
+}
+.avatar{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+}

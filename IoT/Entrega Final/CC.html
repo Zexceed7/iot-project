@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head> 
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBQARSfPvk4Wd-d1PAUv3CrvwZA1sOFFDE",
+          authDomain: "verano-iot.firebaseapp.com",
+          databaseURL: "https://verano-iot.firebaseio.com",
+          projectId: "verano-iot",
+          storageBucket: "verano-iot.appspot.com",
+          messagingSenderId: "686118642843",
+          appId: "1:686118642843:web:dd9909c2741d89dc"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+    <link rel="stylesheet" href="CC-style.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=“icon” type=“image/png” href=“https://www.pinclipart.com/picdir/big/155-1554032_huellas-de-perro-silueta-clipart.png” />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="CC-script.js"></script>
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+    <title>Control center</title>
+</head>
+<body>
+    <div class="infoContainer">
+        <img class="avatar" 
+        src="https://thumbs.gfycat.com/PepperyLikelyHog-max-1mb.gif" 
+        alt="https://media.tenor.com/images/74f4864edb050eee8db0e0ba5d86805a/tenor.gif">
+        <h1 class="titulo"> Alimentador para perro</h1>
+        <p class="descripcion">Centro de alimentacion a distancia.</p>
+     </div>
+     <div class="controlCenterContainer">
+        <div class="cardContainer">
+            <div class="card" 
+            id="cardButton">
+            <h1 class="cardTitle cardButtonTitle">Alimentar</h1>
+                <button 
+                class="botonEncendido"
+                id="botonEncendido"
+                onclick="alimentar()"
+               >
+                    <i class="material-icons">
+                    done_outline
+                    </i>
+                </button>
+            </div>
+         </div> 
+         <div class="cardContainer">
+            <div class="card" id="cardNivel">
+                <h1 class="cardTitle" id="feedTitle">Nivel de alimento</h1>
+                <div class="feedSpaceIndicator"></div>
+                <div class="feedIndicator"></div>
+            </div>
+        </div>
+        
+        </div>
+    
+
+    
+</body>
+</html>
